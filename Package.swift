@@ -18,15 +18,15 @@ let package = Package(
 		.target(name: "GXCoreModule_SD_CardScannerWrapper",
 				dependencies: [
 					"GXCoreModule_SD_CardScanner",
-					.product(name: "GXCoreBL", package: "GXCoreBL", condition: .when(platforms: [.iOS, .tvOS, .watchOS])),
+					.product(name: "GXCoreBL", package: "GXCoreBL", condition: .when(platforms: [.watchOS, .iOS, .tvOS])),
 					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS])),
 					.product(name: "GXFoundation", package: "GXFoundation", condition: .when(platforms: [.iOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_CardScanner",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_CardScanner-1.0.0-beta+20230309134517.xcframework.zip",
-			checksum: "e514bbd6d30bb8493e8008bf80bc26164a2128e1d7d7d4eab201e22b9dbf99ba"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_CardScanner-1.0.0-beta+20230309142042.xcframework.zip",
+			checksum: "6fb6c51200d679ce604af36adc9bd561b829ffe288083770da20647a948e00a2"
 		)
 	]
 )
