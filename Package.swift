@@ -10,23 +10,23 @@ let package = Package(
 			targets: ["GXCoreModule_SD_CardScannerWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreBL.git", exact: "1.0.0-beta.20230704132152"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.0.0-beta.20230704132152"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXFoundation.git", exact: "1.0.0-beta.20230704132152")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreBL.git", exact: "1.0.0-beta.20230704143346"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.0.0-beta.20230704143346"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXFoundation.git", exact: "1.0.0-beta.20230704143346")
 	],
 	targets: [
 		.target(name: "GXCoreModule_SD_CardScannerWrapper",
 				dependencies: [
 					"GXCoreModule_SD_CardScanner",
-					.product(name: "GXCoreBL", package: "GXCoreBL", condition: .when(platforms: [.iOS, .tvOS, .watchOS])),
+					.product(name: "GXCoreBL", package: "GXCoreBL", condition: .when(platforms: [.iOS, .watchOS, .tvOS])),
 					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS])),
 					.product(name: "GXFoundation", package: "GXFoundation", condition: .when(platforms: [.iOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_CardScanner",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_CardScanner-1.0.0-beta.20230704132152.xcframework.zip",
-			checksum: "ddf3cdbf1d610efdf5f0429dc65dd8d88df1893c70b8abf0d05948940a085715"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_CardScanner-1.0.0-beta.20230704143346.xcframework.zip",
+			checksum: "a0fc77f00d9f899ccdac0af8c0ad46d6468d07d0c896e5c605801795f7e01133"
 		)
 	]
 )
