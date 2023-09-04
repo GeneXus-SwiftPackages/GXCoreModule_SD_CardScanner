@@ -10,9 +10,9 @@ let package = Package(
 			targets: ["GXCoreModule_SD_CardScannerWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreBL.git", exact: "1.2.0-beta.17"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.2.0-beta.17"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXFoundation.git", exact: "1.2.0-beta.17")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreBL.git", exact: "1.2.0-beta.18"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.2.0-beta.18"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXFoundation.git", exact: "1.2.0-beta.18")
 	],
 	targets: [
 		.target(name: "GXCoreModule_SD_CardScannerWrapper",
@@ -25,8 +25,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_CardScanner",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_CardScanner-1.2.0-beta.17.xcframework.zip",
-			checksum: "7fb3b213ad507f631f089e9085e2edba0ea5579eaed0cc44c95ef52c14814597"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_CardScanner-1.2.0-beta.18.xcframework.zip",
+			checksum: "caef8ba5ace80c596d1502c7b5d9c70605dd1d064dc74d8f48dde0b3f35484da"
 		)
 	]
 )
